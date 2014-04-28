@@ -29,6 +29,7 @@
 		<geotools.version>8.4</geotools.version>
 		<geoxygene.noyau.version>1.7-SNAPSHOT</geoxygene.noyau.version>
 		<geoserver.extension.version>2.4.0</geoserver.extension.version>
+		<path.geoxygene.noyau>E:\SVN\trunk\geoxygene</path.geoxygene.noyau>
 		<path.geoserver>D:\MesProgrammes\GeoServer\GeoServer-2.4.1\webapps\geoserver\WEB-INF\lib</path.geoserver>
 	</properties>
 	
@@ -175,12 +176,12 @@
 		<repository>
 			<id>snapshots</id>
 			<name>Nexus Snapshots Repository</name>
-			<url>https://dionysos2/nexus-webapp-1.4.1/content/repositories/snapshots</url>
+			<url>https://forge-cogit.ign.fr/nexus/content/repositories/snapshots/</url>
 		</repository>
 		<repository>
 			<id>releases</id>
 			<name>Internal Releases</name>
-			<url>https://dionysos2.ign.fr/nexus-webapp-1.4.1/content/repositories/releases/</url>
+			<url>https://forge-cogit.ign.fr/nexus/content/repositories/releases/</url>
 		</repository>
 	</repositories>
 	
@@ -231,22 +232,22 @@
 										<copy file="${basedir}/target/geoxygene-wps-${project.version}.jar"
 											todir="${path.geoserver}" />
 										<copy
-											file="${basedir}/../geoxygene-api\target\geoxygene-api-${project.version}.jar"
+											file="${path.geoxygene.noyau}/geoxygene-api\target\geoxygene-api-${project.version}.jar"
 											todir="${path.geoserver}" />
 										<copy
-											file="${basedir}/../geoxygene-feature\target\geoxygene-feature-${project.version}.jar"
+											file="${path.geoxygene.noyau}/geoxygene-feature\target\geoxygene-feature-${project.version}.jar"
 											todir="${path.geoserver}" />
 										<copy
-											file="${basedir}/../geoxygene-contrib\target\geoxygene-contrib-${project.version}.jar"
+											file="${path.geoxygene.noyau}/geoxygene-contrib\target\geoxygene-contrib-${project.version}.jar"
 											todir="${path.geoserver}" />
 										<copy
-											file="${basedir}/../geoxygene-io\target\geoxygene-io-${project.version}.jar"
+											file="${path.geoxygene.noyau}/geoxygene-io\target\geoxygene-io-${project.version}.jar"
 											todir="${path.geoserver}" />
 										<copy
-											file="${basedir}/../geoxygene-util\target\geoxygene-util-${project.version}.jar"
+											file="${path.geoxygene.noyau}/geoxygene-util\target\geoxygene-util-${project.version}.jar"
 											todir="${path.geoserver}" />
 										<copy
-											file="${basedir}/../geoxygene-spatial\target\geoxygene-spatial-${project.version}.jar"
+											file="${path.geoxygene.noyau}/geoxygene-spatial\target\geoxygene-spatial-${project.version}.jar"
 											todir="${path.geoserver}" />
 
 									</tasks>
@@ -267,12 +268,12 @@
         <repository>
             <id>releases</id>
             <name>Nexus Releases Repository</name>
-            <url>https://dionysos2/nexus-webapp-1.4.1/content/repositories/releases</url>
+            <url>https://forge-cogit.ign.fr/nexus/content/repositories/releases/</url>
         </repository>
         <snapshotRepository>
             <id>snapshots</id>
             <name>Nexus Snapshots Repository</name>
-            <url>https://dionysos2/nexus-webapp-1.4.1/content/repositories/snapshots/</url>
+            <url>https://forge-cogit.ign.fr/nexus/content/repositories/snapshots/</url>
         </snapshotRepository>
         <site>
             <id>oxygene-project.sf.net</id>
