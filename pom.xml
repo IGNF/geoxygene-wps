@@ -29,7 +29,7 @@
 		<geotools.version>8.4</geotools.version>
 		<geoxygene.noyau.version>1.7-SNAPSHOT</geoxygene.noyau.version>
 		<geoserver.extension.version>2.4.0</geoserver.extension.version>
-		<path.geoxygene.noyau>E:\SVN\trunk\geoxygene</path.geoxygene.noyau>
+		<path.geoxygene.noyau>E:\Workspace\geoxygene</path.geoxygene.noyau>
 		<path.geoserver>D:\MesProgrammes\GeoServer\GeoServer-2.4.1\webapps\geoserver\WEB-INF\lib</path.geoserver>
 	</properties>
 	
