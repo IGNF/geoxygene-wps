@@ -15,6 +15,15 @@ import fr.ign.cogit.geoxygene.util.conversion.GeOxygeneGeoToolsTypes;
 import fr.ign.cogit.process.geoxygene.GeoxygeneProcess;
 
 /**
+ *        This software is released under the licence CeCILL
+ * 
+ *        see Licence_CeCILL_V2-fr.txt
+ *        see Licence_CeCILL_V2-en.txt
+ * 
+ *        see <a href="http://www.cecill.info/">http://www.cecill.info</a>
+ * 
+ * @copyright IGN
+ * 
  * Recalage d'un jeu de points sur la route la plus proche par la méthode du plus proche voisin.
  * 
  * @author Sofiane Kriat - ENSG

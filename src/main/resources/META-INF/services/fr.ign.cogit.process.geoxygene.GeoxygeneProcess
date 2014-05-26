@@ -1,4 +1,5 @@
 fr.ign.cogit.process.geoxygene.cartetopo.BuildingBlocksCreationProcess
 fr.ign.cogit.process.geoxygene.cartetopo.PlanarGraphCreationProcess
 fr.ign.cogit.process.geoxygene.mapmatching.PPVProcess
+fr.ign.cogit.process.geoxygene.mapmatching.HMMMapMatcherProcess
 fr.ign.cogit.process.geoxygene.netmatching.NetworkDataMatchingWithParamProcess
