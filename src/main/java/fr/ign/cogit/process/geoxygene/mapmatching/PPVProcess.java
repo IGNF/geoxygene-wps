@@ -15,9 +15,9 @@ import fr.ign.cogit.geoxygene.util.conversion.GeOxygeneGeoToolsTypes;
 import fr.ign.cogit.process.geoxygene.GeoxygeneProcess;
 
 /**
+ * Recalage d'un jeu de points sur la route la plus proche par la méthode du plus proche voisin.
  * 
- * 
- *
+ * @author Sofiane Kriat - ENSG
  */
 @DescribeProcess(title = "RecalagePPV", description = "Recale des points suivant la méthode PPV")
 public class PPVProcess implements GeoxygeneProcess {
@@ -28,9 +28,7 @@ public class PPVProcess implements GeoxygeneProcess {
   public SimpleFeatureCollection execute(
       @DescribeParameter(name = "points", description = "Points à recaler") SimpleFeatureCollection points,
       @DescribeParameter(name = "reseauRoutier", description = "Réseau routier de la zone") SimpleFeatureCollection reseauRoutier,
-      @DescribeParameter(name = "distance", description = "distance maximale d'appariemment") double distance)
-  
-  {
+      @DescribeParameter(name = "distance", description = "distance maximale d'appariemment") double distance) {
    
     try {
     
