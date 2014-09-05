@@ -164,6 +164,11 @@
 			<artifactId>geoxygene-contrib</artifactId>
 			<version>${geoxygene.noyau.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>fr.ign.cogit</groupId>
+			<artifactId>geoxygene-matching</artifactId>
+			<version>${geoxygene.noyau.version}</version>
+		</dependency>
 		
 		<!-- Scope TEST -->
 		<dependency>
