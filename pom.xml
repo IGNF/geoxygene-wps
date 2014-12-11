@@ -29,7 +29,7 @@
 		<geotools.version>8.4</geotools.version>
 		<geoxygene.noyau.version>1.7-SNAPSHOT</geoxygene.noyau.version>
 		<geoserver.extension.version>2.4.0</geoserver.extension.version>
-		<path.geoxygene.noyau>E:\Workspace\geoxygene</path.geoxygene.noyau>
+		<path.geoxygene.noyau>E:\WORKSPACE\geoxygene</path.geoxygene.noyau>
 		<path.geoserver>D:\MesProgrammes\GeoServer\GeoServer-2.4.1\webapps\geoserver\WEB-INF\lib</path.geoserver>
 	</properties>
 	
@@ -88,18 +88,18 @@
                 </executions>
             </plugin>
 			<plugin>
-                        <groupId>org.apache.maven.plugins</groupId>
-                        <artifactId>maven-javadoc-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>attach-javadocs</id>
-                                <phase>package</phase>
-                                <goals>
-                                    <goal>jar</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                    </plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                     <execution>
+                         <id>attach-javadocs</id>
+                         <phase>package</phase>
+                         <goals>
+                             <goal>jar</goal>
+                         </goals>
+                     </execution>
+                </executions>
+            </plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
@@ -240,6 +240,8 @@
 											file="${path.geoserver}geoxygene-feature-${project.version}.jar" />
 										<delete
 											file="${path.geoserver}geoxygene-contrib-${project.version}.jar" />
+										<delete
+                                            file="${path.geoserver}geoxygene-matching-${project.version}.jar" />
 										<delete file="${path.geoserver}geoxygene-io-${project.version}.jar" />
 										<delete file="${path.geoserver}geoxygene-util-${project.version}.jar" />
 										<delete
@@ -257,6 +259,9 @@
 										<copy
 											file="${path.geoxygene.noyau}/geoxygene-contrib\target\geoxygene-contrib-${project.version}.jar"
 											todir="${path.geoserver}" />
+										<copy
+                                            file="${path.geoxygene.noyau}/geoxygene-matching\target\geoxygene-matching-${project.version}.jar"
+                                            todir="${path.geoserver}" />
 										<copy
 											file="${path.geoxygene.noyau}/geoxygene-io\target\geoxygene-io-${project.version}.jar"
 											todir="${path.geoserver}" />
