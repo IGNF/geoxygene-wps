@@ -28,7 +28,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<jts.version>1.13</jts.version>
 		<geotools.version>8.4</geotools.version>
-		<geoxygene.noyau.version>1.8-SNAPSHOT</geoxygene.noyau.version>
+		<geoxygene.noyau.version>1.7-SNAPSHOT</geoxygene.noyau.version>
 		<geoserver.version>2.7.0</geoserver.version>
 		<path.geoxygene.noyau>E:\Workspace\geoxygene</path.geoxygene.noyau>
 		<path.geoserver>D:\MesProgrammes\GeoServer\GeoServer-2.7.0\webapps\geoserver\WEB-INF\lib</path.geoserver>
