@@ -235,7 +235,8 @@
 			<id>boundless</id>
 			<name>Boundless Maven Repository</name>
 			<!-- <url>http://repo.opengeo.org/</url> -->
-			<url>http://repo.boundlessgeo.com/main</url>
+			<!-- <url>http://repo.boundlessgeo.com/main</url> -->
+			<url>https://repo.boundlessgeo.com/main/</url>
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
